@@ -8,7 +8,9 @@
 * **Tingkat Keparahan (Severity):** TINGGI (High)
 
 ## 2. Ringkasan Eksekutif
-Telah terdeteksi serangkaian anomali login dan pelanggaran kebijakan kontrol akses pada server Linux `altocumulus`. Penyerang berhasil mengeksekusi rantai serangan (*Cyber Kill Chain*) yang mencakup akses awal, eskalasi hak istimewa (*privilege escalation*) untuk memotong kontrol audit, dan eksekusi skrip yang tidak diotorisasi. Insiden ini merupakan pelanggaran langsung terhadap standar kepatuhan keamanan terkait manajemen akses dan pemisahan tugas (*Segregation of Duties*).
+Telah terdeteksi rangkaian aktivitas tidak biasa pada host Linux `altocumulus` yang disimulasikan sebagai skenario pembelajaran SOC. Aktivitas mencakup percobaan login SSH berulang, pembuatan akun baru dengan hak istimewa, dan eksekusi skrip dari direktori temporer.
+
+Walaupun insiden ini terjadi dalam lingkungan lab, pola aktivitas yang diamati merepresentasikan teknik yang umum digunakan dalam serangan nyata.
 
 ## 3. Garis Waktu Serangan & Temuan Teknis
 * **Akses Awal (SSH Brute Force):** Sistem *alerting* Splunk menangkap 18 percobaan login yang gagal secara berturut-turut melalui layanan SSH ke akun `hacker` dari alamat IP `127.0.0.1`.
