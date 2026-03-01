@@ -54,5 +54,5 @@ Berikut adalah tampilan dashboard utama yang memantau aktivitas mencurigakan sec
 *Gambar 2: Konfigurasi Alert otomatis untuk mendeteksi percobaan login gagal yang melebihi ambang batas.*
 
 ## 📄 Laporan Investigasi (Triage)
-Hasil analisis log diubah menjadi laporan insiden yang berfokus pada mitigasi teknis dan penegakan kebijakan kontrol akses. Laporan lengkap dapat dilihat di sini:
-Laporan Triage INC-2026-001
+Hasil analisis log diubah menjadi laporan insiden yang berfokus pada mitigasi teknis dan penegakan kebijakan kontrol akses. Laporan lengkap dapat dilihat di sini: 
+[Laporan Triage INC-2026-001](Triage-Report/Laporan_Insiden_001.md)
